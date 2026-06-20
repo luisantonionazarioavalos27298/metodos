@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+         <h1 class= "text text-3xl font-bold mb-6">Lista de Productos</h1>
+         <select name="filtro" id="filtro" class="select select-bordered mb-6">
+            <option value="todos">Todas las categorias</option>
+         </select>
+       <div class="overflow-x-auto">
+  <table class="table table-zebra">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categoria</th>
+        <th>Stock</th>
+        <th>Total de stock</th>
+      </tr>
+    </thead>
+    <tbody id="products">
+    </tbody>
+  </table>
+</div>
+<script src="productos.js"></script>
+<script src="productos_acciones.js"></script>
+    </body>
+</html>

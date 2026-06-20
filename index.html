@@ -1,18 +1,30 @@
-<html lang="en">
+<html lang="es">
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
     <body>
-        <form action="#">
-            <input type="number" id="numero_1"
-            name="numero_1">
-            <label for="numero_2">Número 2:</label>
-            <input type="number" id="numero_2"
-            name="numero_2">
-            <p id="resultado"></p>
-            <button type="button" id="btnSuma">Sumar</button>
-            <button type="button" id="btnResta">Restar</button>
-            <button type="button"
-            id="btnMultiplica">Multiplicar</button>
-            <button type="button" id="btnDivide">Dividir</button>
-        </form>
+        <main class="contenedor">
+            <form class="tarjeta" action="#">
+                <h1>Calculadora</h1>
+
+                <label for="numero_1">Numero 1</label>
+                <input type="number" id="numero_1" name="numero_1" placeholder="Escribe el primer numero">
+
+                <label for="numero_2">Numero 2</label>
+                <input type="number" id="numero_2" name="numero_2" placeholder="Escribe el segundo numero">
+
+                <p class="resultado" id="resultado">El resultado aparecera aqui</p>
+
+                <div class="botones">
+                    <button type="button" id="btnSuma">Sumar</button>
+                    <button type="button" id="btnResta">Restar</button>
+                    <button type="button" id="btnMultiplica">Multiplicar</button>
+                    <button type="button" id="btnDivide">Dividir</button>
+                </div>
+            </form>
+        </main>
+
         <script src="funciones.js"></script>
     </body>
 </html>
